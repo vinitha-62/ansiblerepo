@@ -8,5 +8,5 @@
       state: present
   - name: start web server
     service:
-      name: start web server
+      name: httpd
       state: started
