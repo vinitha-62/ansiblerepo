@@ -2,7 +2,7 @@
 - hosts: mywebserver
   become: yes
   tasks:
-    - name: install java on redhat node
+    - name: install java on debian node
       dnf:
-        name: "{{myjavapackonredhat}}"
+        name: "{{myjavapackondebian}}"
         state: present

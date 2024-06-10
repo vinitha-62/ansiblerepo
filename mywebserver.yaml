@@ -2,11 +2,24 @@
 - hosts: mywebserver
   become: yes
   tasks:
-  - name: install httpd server
+  - name: install httpd server on redhat node side
     dnf:
-      name: "{{mywebpack}}"
+      name: "{{mywebpackonredhat}}"
       state: present
+    when: ansible_os_family=="RedHat"
   - name: start web server
     service:
-      name: "{{mywebpack}}"
+      name: "{{mywebpackonredhat}}"
       state: started
+    when: ansible_os_family=="RedHat"
+  - name: install httpd server on debian node side
+    apt:
+      name: "{{mywebpackondebian}}"
+      state: present
+    when: ansible_os_family=="Debian"
+  - name: start web server
+    service:
+      name: "{{mywebpackondebian}}"
+      state: started
+    when: ansible_os_family=="Debian"
+
