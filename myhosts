@@ -3,4 +3,4 @@
 [myredhatserver]
 172.31.42.100
 [mywebserver:vars]
-mywebpack=httpddd
+mywebpack=httpd
