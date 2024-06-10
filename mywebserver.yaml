@@ -4,9 +4,9 @@
   tasks:
   - name: install httpd server
     dnf:
-      name: httpd
+      name: "{{mywebpack}}"
       state: present
   - name: start web server
     service:
-      name: httpd
+      name: "{{mywebpack}}"
       state: started
