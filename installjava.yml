@@ -1,0 +1,8 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+    - name: install java on node
+      dnf:
+        name: "{{myjavapack}}"
+        state: present
