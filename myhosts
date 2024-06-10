@@ -2,3 +2,5 @@
 172.31.42.119
 [myredhatserver]
 172.31.42.100
+[mywebserver:vars]
+mywebpack=httpd
