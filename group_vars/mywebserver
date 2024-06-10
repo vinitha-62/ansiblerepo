@@ -2,4 +2,4 @@
 mywebpackonredhat: httpd
 mywebpackondebian: apache2
 myjavapackonredhat: java-1.8.0-amazon-corretto
-myjavapackondebian: openjdk-8-jdk
+myjavapackondebian: default-jdk
