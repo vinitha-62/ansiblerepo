@@ -3,8 +3,7 @@
   become: yes
   tasks:
     - name: execute linux command
-      command:
-        name: hostname -f
+      command: hostname -f
       register: myresult
     - name: save result
       debug:
