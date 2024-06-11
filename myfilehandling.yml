@@ -2,4 +2,8 @@
 - hosts: 172.31.24.49
   become: yes
   tasks:
-  - include_tasks: createnewfile.yml
+    - include_tasks: createnewfile.yml
+    - name: copy file to node
+      copy:
+        src: test.txt
+        dest: /home/vinitha/welcome
