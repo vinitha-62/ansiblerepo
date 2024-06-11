@@ -15,6 +15,5 @@
     - name: copy index.j2 into node
       copy:
         src: index.j2
-        dest: /var/www/html
-
-
+        dest: /var/www/html/index.html
+        notify: restart web server
