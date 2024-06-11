@@ -13,7 +13,7 @@
         dest: /home/vinitha
         force_basic_auth: yes
     - name: copy index.j2 into node
-      copy:
+      template:
         src: index.j2
         dest: /var/www/html/index.html
         notify: restart web server
