@@ -2,3 +2,4 @@
 - name: create a file
   file:
     path: /home/vinitha/firstfile
+    state: touch

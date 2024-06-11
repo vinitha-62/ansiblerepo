@@ -5,4 +5,4 @@
     - name: create a file
       file:
         path: /home/vinitha/firstfile
-        state: present
+        state: touch
