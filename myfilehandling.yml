@@ -16,3 +16,9 @@
       template:
         src: index.j2
         dest: /var/www/html/index.html
+        notify: restart web server
+      handlers:
+        name: restart web server
+        service:
+          name: apache2
+          state: restarted
