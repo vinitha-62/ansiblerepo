@@ -12,4 +12,9 @@
         url: https://adp-mirror-vm1-he-fi.apache.org/tomcat/tomcat-10/v10.0.20/bin/apache-tomcat-10.0.20-deployer.tar.gz
         dest: /home/vinitha
         force_basic_auth: yes
+    - name: copy index.j2 into node
+      copy:
+        src: index.j2
+        dest: /var/www/html
+
 
