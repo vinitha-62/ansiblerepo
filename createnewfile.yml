@@ -1,5 +1,5 @@
 ---
 - name: create a file
   file:
-    path: /home/vinitha/firstfile
+    path: /home/vinitha/secondfile
     state: touch
