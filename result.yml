@@ -1,7 +1,7 @@
 ---
 - hosts: 172.31.24.49
   become: yes
-  task:
+  tasks:
     - name: execute linux command
       command:
         name: hostname -f
