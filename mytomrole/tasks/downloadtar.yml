@@ -1,0 +1,15 @@
+---
+- name: download tomcat tar file
+  geturl:
+    url:  https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/9.0.55/tomcat-9.0.55.tar.gz
+    dest: /home/vinitha/tomcat-9.0.55.tar.gz
+    force_basic_auth: yes
+- name: create folder
+  file:
+    path: /opt/tomcat/
+    state: ditrectory
+
+- name: extract tar file
+  command: 
+    cmd: tar -zvxf /home/vinitha/apache-tomcat-9.0.55.tar.gz -C /opt/tomcat/ --strio-components=1
+    creates: /opt/tomcat/LICENSE

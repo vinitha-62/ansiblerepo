@@ -1,0 +1,13 @@
+---
+- name: copy host manager context file into node
+  template:
+  src: templates/hostmanagercontext.j2
+  dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
+- name: copy manager context file into node
+  template:
+  src: tempaltes/managercontext.j2
+  dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+- name: copy tomcat-users file into node
+  template:
+  src: tempaltes/tomcatuser.j2
+  dest: /opt/tomcat/conf/tomcat-users.xml

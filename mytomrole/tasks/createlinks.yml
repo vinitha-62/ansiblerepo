@@ -1,0 +1,9 @@
+---
+- name: create linked file for tomcat up
+  command: 
+    cmd: ln -s /opt/tomcat/bin/startup.sh /usr/local/bin/tomcatup
+    creates: /usr/local/bin/tomcatup
+- name: create linked file for tomcat down
+  command: 
+    cmd: ln -s /opt/tomcat/bin/shutdown.sh /usr/local/bin/tomcatdown
+    creates: /usr/local/bin/tomcatdown
