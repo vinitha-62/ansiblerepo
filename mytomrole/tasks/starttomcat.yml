@@ -1,0 +1,5 @@
+---
+- name: tomcat down
+  command: tomcatdown
+- name: tomcat up
+  command: tomcatup
