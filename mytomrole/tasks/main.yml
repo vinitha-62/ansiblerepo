@@ -6,3 +6,4 @@
 - include_tasks: createlinks.yml
 - include_tasks: tomcatdashboard.yml
 - include_tasks: starttomcat.yml
+- include_tasks: mydeploy.yml

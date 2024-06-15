@@ -1,0 +1,5 @@
+---
+- name: deploy file
+  copy:
+    src: /home/vinitha/Downloads/sample.war
+    dest: /opt/tomcat/webapps/sample.war
