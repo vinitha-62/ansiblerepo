@@ -9,5 +9,5 @@
     dest: /opt/tomcat/webapps/manager/META-INF/context.xml
 - name: copy tomcat-users file into node
   template:
-    src: tempaltes/tomcatuser.j2
+    src: templates/tomcatuser.j2
     dest: /opt/tomcat/conf/tomcat-users.xml
